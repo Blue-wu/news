@@ -1,0 +1,6 @@
+# 项目根目录/robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /login/
+Sitemap: http://rmae14y.top/sitemap.xml

@@ -1,0 +1,17 @@
+services:
+  blog-backend:
+    build: .
+    network_mode: "host"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./scripts/database.sql:/app/scripts/database.sql
+    environment:
+      - TZ=Asia/Shanghai
+      - BASE_URL=https://rmae14y.top
+      - DB_HOST=localhost
+      - DB_PORT=3306
+      - DB_USER=blog_db
+      - DB_PASSWORD=ytFk8yfFJaR68XEf
+      - DB_NAME=blog_db
+    restart: unless-stopped
+
